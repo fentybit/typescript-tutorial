@@ -18,9 +18,18 @@ greet = () => {
 // };
 
 // if we use default value, we do not the '?'
-const add = (a: number, b: number, c: number | string = 10) => {
+// if we don't return something, it can still represent a lack of return value with ':void'
+const add = (a: number, b: number, c: number | string = 10): void => {
   console.log(a + b);
   console.log(c);
 };
 
-add(5, 10);
+add(5, 10, "20");
+
+// if you have a bigger function, you can add ':number'
+const minus = (a: number, b: number): number => {
+  return a + b;
+};
+
+let result = minus(10, 7);
+// result = 'something else' we can not change the type, it's automatically inferred
