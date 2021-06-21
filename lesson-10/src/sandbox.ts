@@ -1,5 +1,4 @@
 //! FUNCTION SIGNATURES
-
 // let greet: Function;
 
 // example 1
